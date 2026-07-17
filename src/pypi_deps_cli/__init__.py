@@ -1,0 +1,1 @@
+"""PyPI dependency query CLI."""
