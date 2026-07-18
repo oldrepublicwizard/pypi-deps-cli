@@ -1,17 +1,12 @@
 # pypi-deps-cli
 
-Query the PyPI JSON API for package dependencies, metadata, and version comparison.
+Query PyPI for package deps / metadata from the command line. Handy when you're chasing version pins.
 
 ## Install
 
 ```bash
-pip install -e .
-pypi-deps requests
+pip install git+https://github.com/oldrepublicwizard/pypi-deps-cli.git
 ```
-
-## Origin
-
-Extracted from PyKotor `helper_scripts/python/check_pypi_deps.py`.
 
 ## License
 

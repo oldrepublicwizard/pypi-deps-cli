@@ -6,19 +6,19 @@ Useful for verifying package configurations, dependency resolution, and debuggin
 
 Examples:
     # Check latest version of a package
-    python check_pypi_deps.py holocrontoolset
+    python check_pypi_deps.py example-toolset
 
     # Check specific version
-    python check_pypi_deps.py holocrontoolset --version 4.0.0b3
+    python check_pypi_deps.py example-toolset --version 4.0.0b3
 
     # Search for specific dependency
-    python check_pypi_deps.py holocrontoolset --search pykotorgl
+    python check_pypi_deps.py example-toolset --search examplegl
 
     # JSON output for scripting
-    python check_pypi_deps.py holocrontoolset --format json
+    python check_pypi_deps.py example-toolset --format json
 
     # Compare two versions
-    python check_pypi_deps.py holocrontoolset --version 4.0.0b2 --compare-version 4.0.0b3
+    python check_pypi_deps.py example-toolset --version 4.0.0b2 --compare-version 4.0.0b3
 """
 
 from __future__ import annotations
@@ -291,7 +291,7 @@ def main() -> None:
 
     parser.add_argument(
         "package",
-        help="Package name to check (e.g., 'holocrontoolset')",
+        help="Package name to check (e.g., 'example-toolset')",
     )
 
     parser.add_argument(
